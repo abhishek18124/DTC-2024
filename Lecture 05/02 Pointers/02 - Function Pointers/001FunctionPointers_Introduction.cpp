@@ -16,7 +16,24 @@ bool ascending(int a, int b) {
 
 int main() {
 
-	// todo ...
+	// cout << (void*)&greet << " " << (void*)greet << endl;
+	// cout << (void*)&add << " " << (void*)add << endl;
+	// cout << (void*)&ascending << " " << (void*)ascending << endl;
+
+	// // void (*gptr)() = &greet;
+	// // int (*aptr)(int, int) = &add;
+	// // bool (*ascptr)(int, int) = &ascending;
+
+	// '&' is optional while extracting address of a fn
+
+	void (*gptr)() = greet;
+	int (*aptr)(int, int) = add;
+	bool (*ascptr)(int, int) = ascending;
+
+	greet();
+	(*gptr)();
+	gptr();
+	(*greet)();
 
 	return 0;
 }

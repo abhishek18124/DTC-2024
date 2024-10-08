@@ -11,5 +11,19 @@ int main() {
 
 	cout << endl;
 
+	double y = 3.14;
+	cout << "y = " << y << endl;
+	cout << "&y = " << &y << endl;
+	cout << "sizeof(&y) = " << sizeof(&y) << "B" << endl;
+
+	cout << endl;
+
+	char ch = 'A';
+	cout << "ch = " << ch << endl;
+	cout << "&ch = " << &ch << endl;
+	cout << "sizeof(&ch) = " << sizeof(&ch) << "B" << endl;
+
+	cout << endl;
+
 	return 0;
 }

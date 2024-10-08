@@ -8,7 +8,7 @@ int main() {
 
 	int* xptr; // pointer declaration
 	xptr = &x; // pointer assignment
-	
+
 	cout << "x = " << x << endl;
 	cout << "sizeof(x) = " << sizeof(x) << endl;
 	cout << "&x = " << &x << endl;
@@ -16,6 +16,19 @@ int main() {
 	cout << "sizeof(xptr) = " << sizeof(xptr) << "B" << endl;
 
 	cout << endl;
-	
+
+	char ch = 'A';
+
+	char* chptr; // pointer declaration
+	chptr = &ch; // pointer assignment
+
+	cout << "ch = " << ch << endl;
+	cout << "sizeof(ch) = " << sizeof(ch) << endl;
+	cout << "&ch = " << &ch << endl;
+	cout << "chptr = " << chptr << endl;
+	cout << "sizeof(chptr) = " << sizeof(chptr) << "B" << endl;
+
+	cout << endl;
+
 	return 0;
 }
