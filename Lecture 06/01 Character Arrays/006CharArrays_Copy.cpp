@@ -1,5 +1,3 @@
-// n <= 50 and m <= 50
-
 #include<iostream>
 #include<cstring>
 
@@ -7,12 +5,12 @@ using namespace std;
 
 int main() {
 
-	char s1[101] = "abc";
-	char s2[] = "def";
+	char s1[100] = "abc";
+	char s2[] = "xyz";
 
 	cout << s1 << endl;
 
-	// todo ...
+	strcpy(s1, s2);
 
 	cout << s1 << endl;
 

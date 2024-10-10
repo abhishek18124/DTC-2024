@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cstring>
+#include<algorithm>
 
 using namespace std;
 
@@ -9,7 +10,9 @@ int main() {
 
 	cout << str << endl;
 
-	// todo ...
+	int n = strlen(str);
+
+	reverse(str, str + n);
 
 	cout << str << endl;
 
